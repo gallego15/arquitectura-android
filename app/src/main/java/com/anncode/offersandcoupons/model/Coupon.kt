@@ -16,7 +16,7 @@ class Coupon(couponJson: JsonObject?) : Serializable {
     lateinit var image_url: String
     lateinit var title: String
     lateinit var descriptionShort: String
-    lateinit var category: String
+    var category: String? = ""
     lateinit var description:String
     lateinit var offer: String
     lateinit var website: String
