@@ -39,11 +39,4 @@ class CouponViewModel(application: Application) : AndroidViewModel(application) 
         return coupons?.get(position)
     }
 
-
-
-    /*@BindingAdapter("imageUrl")
-    fun setImageUrl(imageView: ImageView, url: String?) {
-        Picasso.get().load(url).into(imageView)
-    }*/
-
 }

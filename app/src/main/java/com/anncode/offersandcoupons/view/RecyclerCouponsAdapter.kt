@@ -49,12 +49,13 @@ class RecyclerCouponsAdapter(var couponViewModel: CouponViewModel,var resource: 
 
     override fun getItemViewType(position: Int): Int {
         //return super.getItemViewType(position)
-        return getLayoutIdForPosition(position)
-    }
-
-    fun getLayoutIdForPosition(position: Int): Int{
+        //return getLayoutIdForPosition(position)
         return resource
     }
+
+    /*fun getLayoutIdForPosition(position: Int): Int{
+        return resource
+    }*/
 
     inner class CardCouponHolder(viewDataBinding: ViewDataBinding) : RecyclerView.ViewHolder(viewDataBinding.root), View.OnClickListener {
         override fun onClick(v: View?) {
